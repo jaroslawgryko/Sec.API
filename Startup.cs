@@ -45,6 +45,7 @@ namespace Sec.API
 
             // sql: usunąć bazę; ef: wykonać update; odkomentować seeder; uruchomić; zakomentować;
             // seeder.SeedLessons();
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin().AllowCredentials());
             app.UseMvc();
         }
     }
