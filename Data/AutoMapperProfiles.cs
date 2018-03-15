@@ -9,6 +9,8 @@ namespace Sec.API.Data
         public AutoMapperProfiles()
         {
             CreateMap<LessonForAddDto, Lesson>();
+
+            CreateMap<Lesson, LessonForListDto>();
         }
     }
 }

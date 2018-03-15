@@ -30,6 +30,7 @@ namespace Sec.API
 
             services.AddTransient<Seed>();
             services.AddAutoMapper();
+            services.AddScoped<ISecRepository, SecRepository>();
 
             services.AddMvc();
         }
